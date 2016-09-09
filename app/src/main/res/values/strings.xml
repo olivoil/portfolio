@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Portfolio</string>
-
+    <string name="subtitle">Here is a sample of my recent work.</string>
     <string name="popular_movies_app_name">Popular Movies</string>
     <string name="stock_hawk_app_name">Stock Hawk</string>
     <string name="build_it_bigger_app_name">Build it Bigger</string>
