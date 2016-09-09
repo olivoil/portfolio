@@ -7,13 +7,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="io.launchpadstudios.portfolio.MainActivity">
+    tools:context="io.launchpadstudios.portfolio.MainActivity"
+    android:clickable="false">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView"
+        android:text="@string/subtitle"
+        android:id="@+id/subtitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp" />
@@ -21,69 +22,71 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/app_button_01"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/subtitle"
         android:text="@string/popular_movies_app_name"
         android:layout_centerHorizontal="true"
-        android:width="250dp" />
+        android:width="250dp"
+        android:onClick="onClickAppButton"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/stock_hawk_app_name"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignEnd="@+id/button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stock_hawk_app_name"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:width="200dp"
-        android:layout_alignStart="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:id="@+id/app_button_02"
+        android:layout_below="@+id/app_button_01"
+        android:layout_alignStart="@+id/app_button_01"
+        android:layout_alignEnd="@+id/app_button_01"
+        android:onClick="onClickAppButton"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/build_it_bigger_app_name"
-        android:id="@+id/button4"
+        android:id="@+id/app_button_04"
         android:width="200dp"
-        android:layout_below="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:onClick="onClickAppButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/app_button_02"
+        android:layout_alignStart="@+id/app_button_02"
+        android:layout_alignEnd="@+id/app_button_02" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/make_your_app_material_app_name"
-        android:id="@+id/button5"
+        android:id="@+id/app_button_05"
         android:width="200dp"
-        android:layout_below="@+id/button4"
-        android:layout_alignStart="@+id/button4"
-        android:layout_alignEnd="@+id/button4" />
+        android:layout_below="@+id/app_button_04"
+        android:layout_alignStart="@+id/app_button_04"
+        android:layout_alignEnd="@+id/app_button_04"
+        android:onClick="onClickAppButton"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/go_ubiquitous_app_name"
-        android:id="@+id/button6"
+        android:id="@+id/app_button_06"
         android:width="200dp"
-        android:layout_below="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:layout_alignEnd="@+id/button5" />
+        android:layout_below="@+id/app_button_05"
+        android:layout_alignStart="@+id/app_button_05"
+        android:layout_alignEnd="@+id/app_button_05"
+        android:onClick="onClickAppButton"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/capstone_app_name"
-        android:id="@+id/button7"
+        android:id="@+id/app_button_07"
         android:width="200dp"
-        android:layout_below="@+id/button6"
-        android:layout_alignStart="@+id/button6"
-        android:layout_alignEnd="@+id/button6" />
+        android:layout_below="@+id/app_button_06"
+        android:layout_alignStart="@+id/app_button_06"
+        android:layout_alignEnd="@+id/app_button_06"
+        android:onClick="onClickAppButton"
+        style="@style/Widget.AppCompat.Button.Colored" />
 </RelativeLayout>
